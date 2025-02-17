@@ -20,16 +20,22 @@ nav li:focus{
      position:absolute
 }
 
-.skip{
-     position:relative;
-     top: 40px;
-}
+.skip {
+     position: absolute;
+     left: -10000px;
+     top: auto;
+     width: 1px;
+     height: 1px;
+     overflow: hidden;
+   }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 
-.skip:focus{
-     top: 20px
-}
+.skip:focus {
+     position: static;
+     width: auto;
+     height: auto;
+   }
 
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
@@ -47,7 +53,7 @@ nav li:focus{
 }
 
 
-/* Step 5: Write selector/rule property to add the background image to the 
+/* Step 5: Write selector/rule property to add the background image to the
 first div in the grid  and place it in the grid. */
 
 .container:first-child{
@@ -87,7 +93,7 @@ first div in the grid  and place it in the grid. */
 .about, .method, .clients, .contact{
      grid-column: 1 / span 4;
      max-height: 600px;
-     overflow: hidden
+     overflow: hidden;
 }
 
 .about{
